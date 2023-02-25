@@ -1,8 +1,7 @@
 use std::io;
 use std::io::BufReader;
-use std::fs::File;
 use std::io::prelude::*;
-use std::net::{TcpListener, TcpStream};
+use std::net::{TcpListener};
 
 fn main() -> io::Result<()> {
     let mut buffer = [0; 17];
