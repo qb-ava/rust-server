@@ -5,7 +5,7 @@ use std::net::{TcpListener};
 
 fn main() -> io::Result<()> {
     let mut buffer = [0; 17];
-    let listener = TcpListener::bind("13.228.225.19:80")?;
+    let listener = TcpListener::bind("0.0.0.0:3000")?;
 
     for i in listener.incoming() {
         match i {
